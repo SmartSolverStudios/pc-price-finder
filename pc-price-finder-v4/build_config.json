@@ -1,0 +1,183 @@
+{
+  "currency": "EUR",
+  "source": {
+    "name": "Tweakers Pricewatch",
+    "base_url": "https://tweakers.net/pricewatch/"
+  },
+  "build": {
+    "case": {
+      "query": "Lian Li O11 Vision Compact Black",
+      "max_gpu_length_mm": 408,
+      "max_cpu_cooler_height_mm": 167,
+      "max_psu_length_mm": 220
+    },
+    "cpu": {
+      "query": "AMD Ryzen 7 7800X3D",
+      "socket": "AM5",
+      "exclude_terms": [
+        "gaming pc",
+        "gaming computer",
+        "complete pc",
+        "complete desktop",
+        "desktop pc",
+        "prebuilt",
+        "system",
+        "bundle"
+      ]
+    },
+    "gpu": {
+      "queries": [
+        "RTX 5070 Ti 16GB",
+        "ASUS RTX 5070 Ti 16GB",
+        "MSI RTX 5070 Ti 16GB",
+        "Gigabyte RTX 5070 Ti 16GB",
+        "ASRock RTX 5070 Ti 16GB",
+        "PNY RTX 5070 Ti 16GB",
+        "Palit RTX 5070 Ti 16GB",
+        "Zotac RTX 5070 Ti 16GB",
+        "Gainward RTX 5070 Ti 16GB"
+      ],
+      "vram_gb": 16,
+      "max_length_mm": 408
+    },
+    "motherboard": {
+      "queries": [
+        "B650 ATX WiFi AM5 DDR5",
+        "B650E ATX WiFi AM5 DDR5",
+        "B650 WiFi ATX",
+        "B650E WiFi ATX"
+      ],
+      "socket": "AM5",
+      "chipsets": [
+        "B650",
+        "B650E"
+      ],
+      "form_factor": "ATX",
+      "memory": "DDR5",
+      "wifi": true
+    },
+    "ram": {
+      "queries": [
+        "32GB DDR5 6000 CL30 EXPO 2x16",
+        "32GB DDR5 6000 CL32 EXPO 2x16",
+        "DDR5 6000 32GB EXPO",
+        "G.Skill Flare X5 32GB DDR5 6000",
+        "G.Skill Trident Z5 Neo 32GB DDR5 6000",
+        "Kingston Fury Beast 32GB DDR5 6000",
+        "Corsair Vengeance 32GB DDR5 6000 EXPO",
+        "TeamGroup T-Create 32GB DDR5 6000 EXPO",
+        "TeamGroup Delta RGB 32GB DDR5 6000 EXPO",
+        "Silicon Power 32GB DDR5 6000 EXPO"
+      ],
+      "capacity_gb": 32,
+      "modules": 2,
+      "speed_mt_s": 6000,
+      "cl_allowed": [
+        30,
+        32
+      ],
+      "profile": "EXPO",
+      "color": "black"
+    },
+    "cooler": {
+      "queries": [
+        "AM5 air cooler black 120mm",
+        "AM5 tower cooler black",
+        "Thermalright Peerless Assassin 120 SE Black",
+        "Thermalright Phantom Spirit 120 SE Black",
+        "Arctic Freezer 36 Black",
+        "Endorfy Fortis 5 Black",
+        "Scythe Fuma 3"
+      ],
+      "type": "air",
+      "socket": "AM5",
+      "max_height_mm": 167
+    },
+    "ssd": {
+      "queries": [
+        "1TB PCIe 4.0 NVMe M.2 2280",
+        "1TB Gen4 NVMe M.2 2280",
+        "WD Black SN770 1TB",
+        "Lexar NM790 1TB",
+        "Samsung 990 EVO Plus 1TB",
+        "Crucial T500 1TB",
+        "Kingston KC3000 1TB",
+        "Solidigm P44 Pro 1TB",
+        "SK hynix Gold P31 1TB",
+        "TeamGroup MP44 1TB"
+      ],
+      "capacity_gb": 1000,
+      "interface": "NVMe",
+      "generation": 4,
+      "form_factor": "M.2 2280"
+    },
+    "psu": {
+      "queries": [
+        "850W ATX 3.1 Gold",
+        "850W ATX 3.0 Gold",
+        "850W PCIe 5 Gold",
+        "be quiet Pure Power 12 850W",
+        "Corsair RM850e 850W ATX 3",
+        "MSI MAG A850GL PCIe5",
+        "MSI MPG A850G PCIe5",
+        "NZXT C850 Gold ATX 3.1",
+        "Cooler Master MWE Gold 850 V3",
+        "ASUS TUF Gaming 850W Gold",
+        "FSP 850W Gold ATX 3"
+      ],
+      "wattage_w": 850,
+      "efficiency": "80+ Gold",
+      "form_factor": "ATX",
+      "max_length_mm": 220,
+      "atx_versions": [
+        "ATX 3.0",
+        "ATX 3.1"
+      ],
+      "modern_gpu_connector": true
+    },
+    "fans": {
+      "queries": [
+        "120mm PWM ARGB black 3 pack",
+        "120mm PWM ARGB black 3-pack",
+        "Montech GF120 V2 3 pack",
+        "Montech GF120R V2 3 pack",
+        "Arctic P12 PWM PST A-RGB 3 pack",
+        "Lian Li 120mm PWM ARGB 3 pack",
+        "Phanteks 120mm PWM ARGB 3 pack"
+      ],
+      "size_mm": 120,
+      "pwm": true,
+      "argb": true,
+      "color": "black",
+      "pack_size": 3,
+      "reverse_blade_optional": true
+    }
+  },
+  "quality": {
+    "ram": {
+      "preferred_cl": 30,
+      "acceptable_cl": 32
+    },
+    "ssd": {
+      "required_generation": 4,
+      "reject_generation": 5
+    },
+    "psu": {
+      "preferred_atx": "ATX 3.1",
+      "acceptable_atx": "ATX 3.0"
+    },
+    "cpu": {
+      "boxed_preferred_over_tray": true
+    }
+  },
+  "search": {
+    "request_delay_seconds": 1.2,
+    "max_results_per_query": 20,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/153 Safari/537.36"
+  },
+  "output": {
+    "json": "results.json",
+    "csv": "recommendations.csv",
+    "text": "report.txt"
+  }
+}

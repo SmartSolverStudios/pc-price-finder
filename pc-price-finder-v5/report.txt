@@ -1,0 +1,84 @@
+PC PRICE FINDER v5
+========================================================================
+Generated: 2026-09-23 01:17:06
+Limieten: GPU <= 408mm, koeler <= 164mm, voeding <= 220mm
+
+CASE  (gevonden 2, geldig 1, handmatig 0, afgekeurd 1)
+------------------------------------------------------------------------
+  AANBEVOLEN: Lian Li O11 Vision Compact Zwart - EUR 129.90 bij Megekko (gratis verzending; 9 shops)
+     https://tweakers.net/pricewatch/2085424/lian-li-o11-vision-compact-zwart.html
+     ter info: tweedehands EUR 79.90 bij ALTERNATE.nl (Lichte gebruikssporen)
+  afgekeurd o.a.: kleur niet zwart (1x)
+
+CPU  (gevonden 21, geldig 2, handmatig 0, afgekeurd 19)
+------------------------------------------------------------------------
+  AANBEVOLEN: AMD Ryzen 7 7800X3D Tray - EUR 273.80 bij HardwareWebwinkel.nl (+ EUR 6.95 verzending; 11 shops)
+     https://tweakers.net/pricewatch/1899436/amd-ryzen-7-7800x3d-tray.html
+  alternatief: AMD Ryzen 7 7800X3D Boxed - EUR 304.99 bij NBB.com
+  afgekeurd o.a.: verkeerde categorie: Pc's (11x), titel past niet bij het zoekfilter (6x), geen actuele aanbieding (2x)
+
+GPU  (gevonden 95, geldig 32, handmatig 0, afgekeurd 63)
+------------------------------------------------------------------------
+  AANBEVOLEN: MSI GeForce RTX 5070 Ti 16G INSPIRE 3X OC - EUR 1199.00 bij Paradigit (gratis verzending; 1 shops)
+     https://tweakers.net/pricewatch/2196346/msi-geforce-rtx-5070-ti-16g-inspire-3x-oc.html
+  alternatief: Gigabyte GeForce RTX 5070 Ti WINDFORCE OC SFF 16G - EUR 1229.90 bij Proshop.nl
+  alternatief: Gigabyte GeForce RTX 5070 Ti WINDFORCE OC V2 16G - EUR 1229.90 bij Proshop.nl
+  alternatief: MSI GeForce RTX 5070 Ti 16G VENTUS 3X OC - EUR 1249.00 bij bol
+  afgekeurd o.a.: geen actuele aanbieding (48x), verkeerde categorie: Pc's (8x), titel past niet bij het zoekfilter (7x)
+
+MOTHERBOARD  (gevonden 35, geldig 15, handmatig 0, afgekeurd 20)
+------------------------------------------------------------------------
+  AANBEVOLEN: Gigabyte B650 EAGLE AX - EUR 129.95 bij Informatique (gratis verzending; 19 shops)
+     https://tweakers.net/pricewatch/2035744/gigabyte-b650-eagle-ax.html
+  alternatief: ASUS TUF Gaming B650E-PLUS WIFI - EUR 139.00 bij Megekko
+  alternatief: ASUS TUF GAMING B650-E WIFI - EUR 144.00 bij Azerty
+  alternatief: ASUS B650E MAX GAMING WIFI - EUR 144.55 bij Micro-Mail B.V.
+  afgekeurd o.a.: geen actuele aanbieding (12x), geen full ATX (8x)
+
+RAM  (gevonden 102, geldig 15, handmatig 0, afgekeurd 87)
+------------------------------------------------------------------------
+  AANBEVOLEN: Team Group T-Force Delta RGB FF3D532G6000HC30DC01 - EUR 469.00 bij ALTERNATE.nl (+ EUR 6.95 verzending; 2 shops)
+     https://tweakers.net/pricewatch/1881350/team-group-t-force-delta-rgb-ff3d532g6000hc30dc01.html
+     prijs/kwaliteit: CL30 (+15 EUR)
+  alternatief: Patriot Viper Venom RGB PVVR532G600C30K - EUR 469.00 bij Amazon.nl Marketplace
+  alternatief: Goodram IRDM IR-6000D564L30S/32GDC - EUR 501.69 bij Amazon.nl Marketplace
+  alternatief: Kingston Fury Beast RGB KF560C30BBEAK2-32 - EUR 574.90 bij Azerty
+  afgekeurd o.a.: geen actuele aanbieding (38x), CL36 niet toegestaan (16x), niet 2x16GB (9x), kleur niet zwart (8x)
+
+COOLER  (gevonden 24, geldig 11, handmatig 0, afgekeurd 13)
+------------------------------------------------------------------------
+  AANBEVOLEN: ARCTIC Freezer 36-S A-RGB, Zwart - EUR 20.51 bij Proshop.nl (+ EUR 6.99 verzending; 9 shops)
+     https://tweakers.net/pricewatch/2353414/arctic-freezer-36-s-a-rgb-zwart.html
+  alternatief: ARCTIC Freezer 36-S, Zwart - EUR 20.90 bij Megekko
+  alternatief: Arctic Freezer 36 (Black) - EUR 23.84 bij Proshop.nl
+  alternatief: Arctic Freezer 36 A-RGB (Black) - EUR 29.95 bij Informatique
+  afgekeurd o.a.: geen actuele aanbieding (13x)
+
+SSD  (gevonden 32, geldig 16, handmatig 0, afgekeurd 16)
+------------------------------------------------------------------------
+  AANBEVOLEN: Lexar NM790 (zonder heatsink) 1TB - EUR 176.50 bij Joybuy (gratis verzending; 18 shops)
+     https://tweakers.net/pricewatch/1932942/lexar-nm790-zonder-heatsink-1tb.html
+  alternatief: Kingston NV3 M.2 2280 (retail) 1TB - EUR 148.90 bij ALTERNATE.nl
+  alternatief: Crucial T500 (zonder heatsink) 1TB - EUR 179.90 bij ALTERNATE.nl
+  alternatief: Kingston KC3000 1TB - EUR 189.00 bij Megekko
+  afgekeurd o.a.: geen actuele aanbieding (9x), titel past niet bij het zoekfilter (5x), geen M.2 2280 (2x)
+
+PSU  (gevonden 90, geldig 50, handmatig 0, afgekeurd 40)
+------------------------------------------------------------------------
+  AANBEVOLEN: Cooler Master MWE GOLD 850 V3 ATX 3.1 Non-Modular - EUR 69.90 bij Amazon.nl (gratis verzending; 14 shops)
+     https://tweakers.net/pricewatch/2167460/cooler-master-mwe-gold-850-v3-atx-31-non-modular.html
+     prijs/kwaliteit: ATX 3.1 (+10 EUR)
+  alternatief: FSP VITA GM 850W, Zwart - EUR 79.00 bij bol Plaza
+  alternatief: Cooler Master Elite Gold 850 - EUR 79.90 bij Azerty
+  alternatief: NZXT C850 Gold Core - EUR 89.58 bij Proshop.nl
+  afgekeurd o.a.: geen actuele aanbieding (27x), titel past niet bij het zoekfilter (9x), geen ATX-voeding (4x)
+
+FANS  (gevonden 9, geldig 3, handmatig 0, afgekeurd 6)
+------------------------------------------------------------------------
+  AANBEVOLEN: Montech GF120 V2 PWM ARGB Zwart 3-Pack, 120mm - EUR 29.90 bij Megekko (+ EUR 5.95 verzending; 1 shops)
+     https://tweakers.net/pricewatch/2318798/montech-gf120-v2-pwm-argb-zwart-3-pack-120mm.html
+  alternatief: Montech GF120R V2 PWM ARGB Zwart 3-Pack, 120mm - EUR 29.90 bij Megekko
+  alternatief: ARCTIC P12 PWM PST RGB 0dB 3-pack Zwart + Controller, 120mm - EUR 49.25 bij Galaxus
+  afgekeurd o.a.: geen actuele aanbieding (3x), frame niet zwart (2x), geen 3-pack (1x)
+
+BUILD TOTAL: EUR 2498.46

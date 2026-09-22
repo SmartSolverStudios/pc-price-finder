@@ -1,0 +1,153 @@
+{
+  "currency": "EUR",
+  "source": {
+    "name": "Tweakers Pricewatch",
+    "base_url": "https://tweakers.net/pricewatch/"
+  },
+  "limits": {
+    "comment": "Fallback als de case-specs niet gevonden worden. Normaal worden de limieten uit de Tweakers-specs van de case gehaald.",
+    "use_case_specs": true,
+    "gpu_mm": 408,
+    "cooler_mm": 164,
+    "psu_mm": 220
+  },
+  "offers": {
+    "comment": "Tweedehands/open-doos-aanbiedingen en zakelijke shops tellen niet mee voor de prijs.",
+    "exclude_secondhand": true,
+    "exclude_shop_terms": ["zakelijk"]
+  },
+  "quality_bonus_eur": {
+    "comment": "Hoeveel euro een eigenschap waard is bij de prijs/kwaliteit-keuze. Effectieve prijs = prijs - bonus.",
+    "cpu_boxed": 25,
+    "ram_best_cl": 15,
+    "psu_atx31": 10,
+    "psu_above_gold": 10,
+    "ssd_qlc_penalty": 30,
+    "ssd_oem_penalty": 15
+  },
+  "build": {
+    "case": {
+      "queries": ["Lian Li O11 Vision Compact"],
+      "title_filter": "o11 vision compact"
+    },
+    "cpu": {
+      "queries": ["AMD Ryzen 7 7800X3D", "7800X3D boxed", "7800X3D tray"],
+      "title_filter": "7800x3d"
+    },
+    "gpu": {
+      "queries": [
+        "RTX 5070 Ti 16GB",
+        "ASUS RTX 5070 Ti 16GB",
+        "MSI RTX 5070 Ti 16GB",
+        "Gigabyte RTX 5070 Ti 16GB",
+        "ASRock RTX 5070 Ti 16GB",
+        "PNY RTX 5070 Ti 16GB",
+        "Palit RTX 5070 Ti 16GB",
+        "Zotac RTX 5070 Ti 16GB",
+        "Gainward RTX 5070 Ti 16GB",
+        "Inno3D RTX 5070 Ti 16GB"
+      ],
+      "title_filter": "5070\\s*ti",
+      "vram_gb": 16
+    },
+    "motherboard": {
+      "queries": [
+        "B650 ATX WiFi AM5 DDR5",
+        "B650E ATX WiFi AM5 DDR5",
+        "B650 WiFi ATX",
+        "B650E WiFi ATX",
+        "B650 WIFI",
+        "B650E WIFI"
+      ],
+      "title_filter": "b650"
+    },
+    "ram": {
+      "queries": [
+        "32GB DDR5 6000 CL30 EXPO 2x16",
+        "DDR5 6000 32GB EXPO",
+        "G.Skill Flare X5 32GB DDR5 6000",
+        "G.Skill Trident Z5 Neo 32GB DDR5 6000",
+        "Kingston Fury Beast 32GB DDR5 6000",
+        "Kingston Fury Beast RGB 32GB DDR5 6000",
+        "Corsair Vengeance 32GB DDR5 6000 EXPO",
+        "TeamGroup T-Create 32GB DDR5 6000 EXPO",
+        "TeamGroup Delta RGB 32GB DDR5 6000 EXPO",
+        "Patriot Viper Venom 32GB DDR5 6000",
+        "Silicon Power 32GB DDR5 6000 EXPO"
+      ],
+      "capacity_gb": 32,
+      "modules": 2,
+      "speed_mt_s": 6000,
+      "cl_allowed": [30, 32]
+    },
+    "cooler": {
+      "queries": [
+        "AM5 air cooler black 120mm",
+        "AM5 tower cooler black",
+        "Thermalright Peerless Assassin 120 SE Black",
+        "Thermalright Phantom Spirit 120 SE Black",
+        "Arctic Freezer 36 Black",
+        "Endorfy Fortis 5 Black",
+        "Scythe Fuma 3",
+        "DeepCool AK400 Zero Dark",
+        "be quiet Pure Rock 3 Black"
+      ]
+    },
+    "ssd": {
+      "queries": [
+        "1TB PCIe 4.0 NVMe M.2 2280",
+        "1TB Gen4 NVMe M.2 2280",
+        "WD Black SN770 1TB",
+        "WD Black SN850X 1TB",
+        "Lexar NM790 1TB",
+        "Samsung 990 Pro 1TB",
+        "Crucial T500 1TB",
+        "Crucial P3 Plus 1TB",
+        "Kingston KC3000 1TB",
+        "Kingston NV3 1TB",
+        "Solidigm P44 Pro 1TB",
+        "SK hynix Platinum P41 1TB",
+        "TeamGroup MP44 1TB"
+      ],
+      "title_filter": "1\\s*tb|1000\\s*gb|1024\\s*gb"
+    },
+    "psu": {
+      "queries": [
+        "850W ATX 3.1 Gold",
+        "850W ATX 3.0 Gold",
+        "850W PCIe 5 Gold",
+        "be quiet Pure Power 12 850W",
+        "Corsair RM850e",
+        "Corsair RM850x",
+        "MSI MAG A850GL PCIe5",
+        "MSI MPG A850G PCIe5",
+        "NZXT C850 Gold",
+        "Cooler Master MWE Gold 850 V3",
+        "ASUS TUF Gaming 850W Gold",
+        "Seasonic Focus GX-850",
+        "FSP 850W Gold ATX 3"
+      ],
+      "title_filter": "850",
+      "wattage_w": 850
+    },
+    "fans": {
+      "queries": [
+        "120mm PWM ARGB black 3 pack",
+        "Montech GF120 V2 3 pack",
+        "Montech GF120R V2 3 pack",
+        "Arctic P12 PWM PST A-RGB 3 pack",
+        "Lian Li 120mm PWM ARGB 3 pack",
+        "Phanteks 120mm PWM ARGB 3 pack"
+      ],
+      "title_filter": "120",
+      "size_mm": 120,
+      "pack_size": 3
+    }
+  },
+  "search": {
+    "request_delay_seconds": 1.2,
+    "max_results_per_query": 20,
+    "cache_hours": 6,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/153 Safari/537.36"
+  }
+}

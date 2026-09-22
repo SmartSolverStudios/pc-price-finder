@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.cache/
+
+# Node / Next
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local env and Vercel link
+.env*
+.vercel
+
+# OS
+.DS_Store
+Thumbs.db
