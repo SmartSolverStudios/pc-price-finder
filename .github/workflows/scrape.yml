@@ -1,8 +1,13 @@
 name: Scrape prices
 
+# The Tweakers scraper is a long batch job (pc-price-finder-v5/pc_price_finder.py).
+# Vercel cannot host it: that directory has requirements.txt, so Vercel selects the
+# Python runtime, then fails because the script is not a web app (no app/application/handler
+# entrypoint). A fake entrypoint would only silence the build. This workflow runs the
+# real scraper and commits the JSON the Next.js app in web/ reads at build time.
 on:
   schedule:
-    # 00:00, 06:00, 12:00 and 18:00 UTC (02:00, 08:00, 14:00 and 20:00 in the Netherlands during summer time)
+    # 00:00, 06:00, 12:00 and 18:00 UTC (02:00, 08:00, 14:00 and 20:00 in the Netherlands during summer time).
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
@@ -15,8 +20,13 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    # Tweakers blocks GitHub-hosted runners. This job has to run on the machine
+    # that can open tweakers.net, registered as a repository self-hosted runner.
+    runs-on: self-hosted
     timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -32,6 +42,19 @@ jobs:
         working-directory: pc-price-finder-v5
         run: python pc_price_finder.py --no-cache
 
+      - name: Keep a blocked scrape off the site
+        working-directory: pc-price-finder-v5
+        run: |
+          python - <<'PY'
+          import json, sys
+          data = json.load(open("results.json", encoding="utf-8"))
+          discovered = sum(c.get("counts", {}).get("discovered", 0) for c in data.get("components", {}).values())
+          if discovered == 0:
+              print("Tweakers returned no products. This scan will not be published.")
+              sys.exit(1)
+          print(f"Discovered {discovered} products.")
+          PY
+
       - name: Copy results into the web app
         run: |
           cp pc-price-finder-v5/results.json web/data/results.json
@@ -45,4 +68,4 @@ jobs:
             exit 0
           fi
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update Tweakers prices from the scheduled scrape."
-          git push
+          git push origin HEAD
