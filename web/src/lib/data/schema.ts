@@ -39,6 +39,7 @@ export const rawProductSchema = z.object({
   effective_price: nullableNumber,
   reject_reasons: z.array(z.string()).optional().default([]),
   manual_checks: z.array(z.string()).optional().default([]),
+  price_note: nullableString,
 });
 
 export const rawRejectedSchema = z.object({

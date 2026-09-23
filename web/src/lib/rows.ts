@@ -30,7 +30,7 @@ export interface ProductRow {
 function fromProduct(p: Product, role: ProductRow["role"]): ProductRow {
   const o = p.offer;
   return {
-    id: `${p.component}:${role}:${p.id}`,
+    id: `${p.component}:${role}:${p.id}:${o?.price ?? "none"}:${o?.shop.name ?? ""}`,
     component: p.component,
     componentLabel: componentLabel(p.component),
     role,

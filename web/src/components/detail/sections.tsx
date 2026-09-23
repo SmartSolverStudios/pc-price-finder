@@ -44,6 +44,7 @@ export function RecommendedCard({ product }: { product: Product }) {
               <StatusBadge status={product.status} />
               <span className="text-xs text-muted-foreground">Recommended by current build configuration</span>
             </div>
+            {product.priceNote && <p className="text-xs text-muted-foreground">{product.priceNote}</p>}
             <h2 className="text-lg font-semibold tracking-tight text-balance sm:text-xl">{product.title}</h2>
             <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
               {product.brand && <span>Brand: {product.brand}</span>}

@@ -135,6 +135,7 @@ function toProduct(component: string, raw: RawProduct): Product {
     },
     manualChecks: raw.manual_checks.map(toManualCheck),
     rejectReasons: raw.reject_reasons.map(toRejectReason),
+    priceNote: raw.price_note,
   };
 }
 

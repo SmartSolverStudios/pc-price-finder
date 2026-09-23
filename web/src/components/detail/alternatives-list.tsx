@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Delivery, Price, QualityAdjustment, Shipping } from "@/components/cells";
+import { Badge } from "@/components/ui/badge";
 import { ExternalLinkButton } from "@/components/external-link";
 import { MarketplaceBadge } from "@/components/status-badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -81,15 +82,23 @@ export function AlternativesList({ recommended, alternatives }: { recommended: P
       </div>
 
       <ul className="divide-y rounded-xl border">
-        {sorted.map((p) => {
+        {sorted.map((p, i) => {
           const o = p.offer;
           const specs = factRows(p.facts);
           const c = checkout(p);
           return (
-            <li key={p.id} className="grid grid-cols-1 gap-3 p-4 md:grid-cols-[minmax(0,1fr)_auto]">
+            <li key={`${p.id}-${o?.price ?? "none"}-${i}`} className="grid grid-cols-1 gap-3 p-4 md:grid-cols-[minmax(0,1fr)_auto]">
               <div className="min-w-0 space-y-2">
                 <div>
-                  <div className="font-medium">{p.title}</div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <div className="font-medium">{p.title}</div>
+                    {p.priceNote && (
+                      <Badge variant="outline" className="font-normal text-muted-foreground">
+                        Less favorable
+                      </Badge>
+                    )}
+                  </div>
+                  {p.priceNote && <p className="mt-1 text-xs text-muted-foreground">{p.priceNote}</p>}
                   <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
                     {p.brand && <span>{p.brand}</span>}
                     {o && (

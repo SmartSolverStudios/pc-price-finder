@@ -67,6 +67,8 @@ export interface Product {
   quality: QualityInfo;
   manualChecks: ManualCheck[];
   rejectReasons: RejectReason[];
+  /** Set when this offer was kept or demoted by comparison with the lowest price so far. */
+  priceNote: string | null;
 }
 
 export type RejectCategory =

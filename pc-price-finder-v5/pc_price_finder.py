@@ -2,6 +2,7 @@
 """PC Price Finder v5: Tweakers discovery -> product page -> spec list -> hard filters -> price/quality choice."""
 from __future__ import annotations
 
+import copy
 import csv
 import json
 import re
@@ -125,6 +126,115 @@ def run_component(kind: str, tw: Tweakers, limits: dict, errors: list[str]) -> d
     }
 
 
+def offer_identity(item: dict) -> tuple:
+    return (item.get("product_id"), item.get("shop"), item.get("price"))
+
+
+def is_lower_price(candidate: dict, record: dict) -> bool:
+    """True when the candidate costs less than the lowest price kept so far.
+
+    Product price decides. When those are equal, lower shipping does.
+    """
+    new_price, old_price = candidate.get("price"), record.get("price")
+    if not isinstance(new_price, (int, float)) or not isinstance(old_price, (int, float)):
+        return False
+    if float(new_price) < float(old_price) - 0.001:
+        return True
+    if abs(float(new_price) - float(old_price)) > 0.001:
+        return False
+    new_ship, old_ship = candidate.get("shipping"), record.get("shipping")
+    if isinstance(new_ship, (int, float)) and isinstance(old_ship, (int, float)):
+        return float(new_price) + float(new_ship) < float(old_price) + float(old_ship) - 0.001
+    return False
+
+
+def _without_note(item: dict) -> dict:
+    kept = copy.deepcopy(item)
+    kept.pop("price_note", None)
+    return kept
+
+
+def _place_less_favorable(alternatives: list[dict], extra: dict, winner: dict) -> list[dict]:
+    """Keeps `extra` visible, without duplicating the winner or the same offer."""
+    winner_id = offer_identity(winner)
+    extra_id = offer_identity(extra)
+    placed: list[dict] = []
+    seen = False
+    for alt in alternatives:
+        if offer_identity(alt) == winner_id:
+            continue
+        if offer_identity(alt) == extra_id:
+            tagged = _without_note(alt)
+            tagged["price_note"] = extra["price_note"]
+            placed.append(tagged)
+            seen = True
+        else:
+            placed.append(alt)
+    if not seen:
+        placed.insert(0, extra)
+    return placed[:MAX_ALTERNATIVES]
+
+
+def remember_best(fresh: dict, previous: dict | None) -> dict:
+    """Keeps the lowest price found so far.
+
+    A lower new price becomes the recommendation and the previous one stays as a
+    less favorable alternative. Anything that does not beat the record is kept
+    beside it, and the record itself stays the recommendation.
+    """
+    if not previous or not previous.get("recommended") or previous["recommended"].get("price") is None:
+        return fresh
+    record = _without_note(previous["recommended"])
+    candidate = fresh.get("recommended")
+    result = dict(fresh)
+
+    if candidate and candidate.get("price") is not None and is_lower_price(candidate, record):
+        winner = _without_note(candidate)
+        winner["price_note"] = "Lower than the previous lowest price."
+        earlier = _without_note(record)
+        earlier["price_note"] = "This was the previous lowest price."
+        result["recommended"] = winner
+        result["alternatives"] = _place_less_favorable(fresh["alternatives"], earlier, winner)
+        if offer_identity(earlier) not in {offer_identity(a) for a in fresh["alternatives"]}:
+            result["counts"] = {**fresh["counts"], "valid": fresh["counts"]["valid"] + 1}
+        log(f"  prijs: lager dan het vorige laagste ({record['price']} -> {winner['price']}); vorige blijft zichtbaar")
+        return result
+
+    kept = _without_note(record)
+    kept["price_note"] = "Lowest price found so far. The latest scan was not lower."
+    alternatives = list(fresh["alternatives"])
+    if candidate and candidate.get("price") is not None and offer_identity(candidate) != offer_identity(kept):
+        later = _without_note(candidate)
+        later["price_note"] = "Not lower than the lowest price found so far."
+        alternatives = _place_less_favorable(alternatives, later, kept)
+        if offer_identity(later) not in {offer_identity(a) for a in fresh["alternatives"]}:
+            result["counts"] = {**fresh["counts"], "valid": fresh["counts"]["valid"] + 1}
+        log(f"  prijs: nieuw ({candidate['price']}) is niet lager dan {kept['price']}; oude prijs en product blijven")
+    else:
+        alternatives = [a for a in alternatives if offer_identity(a) != offer_identity(kept)]
+        log(f"  prijs: geen lagere prijs dan {kept['price']}; oude prijs en product blijven")
+    result["recommended"] = kept
+    result["alternatives"] = alternatives[:MAX_ALTERNATIVES]
+    return result
+
+
+def apply_price_memory(result: dict, previous: dict | None) -> None:
+    prev_components = (previous or {}).get("components") or {}
+    merged: dict[str, Any] = {}
+    for kind in ORDER:
+        if kind in result["components"]:
+            merged[kind] = remember_best(result["components"][kind], prev_components.get(kind))
+        elif kind in prev_components:
+            merged[kind] = prev_components[kind]
+    result["components"] = merged
+    found = [b["recommended"] for b in merged.values() if b.get("recommended")]
+    result["summary"] = {
+        "recommended_count": len(found),
+        "build_total_eur": round(sum(x["price"] for x in found if x.get("price") is not None), 2),
+        "build_total_complete": len(found) == len(ORDER),
+    }
+
+
 def apply_case_limits(case_result: dict, limits: dict) -> None:
     case = case_result["recommended"]
     if not (case and CONFIG["limits"].get("use_case_specs")):
@@ -160,6 +270,8 @@ def write_outputs(result: dict) -> None:
         if x:
             ship = "gratis verzending" if x["shipping"] == 0 else (f"+ EUR {x['shipping']:.2f} verzending" if x["shipping"] else "verzendkosten onbekend")
             lines.append(f"  AANBEVOLEN: {x['title']} - EUR {x['price']:.2f} bij {x['shop']} ({ship}; {x['shop_count']} shops)")
+            if x.get("price_note"):
+                lines.append(f"     {x['price_note']}")
             lines.append(f"     {x['url']}")
             if x["quality_notes"]:
                 lines.append(f"     prijs/kwaliteit: {', '.join(x['quality_notes'])}")
@@ -190,6 +302,14 @@ def write_outputs(result: dict) -> None:
 
 
 def main() -> None:
+    previous = None
+    previous_path = ROOT / "results.json"
+    if previous_path.exists():
+        try:
+            previous = json.loads(previous_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            log("results.json kon niet gelezen worden; er wordt niet met eerdere prijzen vergeleken")
+
     only = [a for a in sys.argv[1:] if a in ORDER]
     no_cache = "--no-cache" in sys.argv
     s = CONFIG["search"]
@@ -206,19 +326,14 @@ def main() -> None:
         if kind == "case":
             apply_case_limits(result["components"]["case"], limits)
 
-    rec = [b["recommended"] for b in result["components"].values()]
-    found = [x for x in rec if x]
     result["limits"] = limits
     result["errors"] = errors
-    result["summary"] = {
-        "recommended_count": len(found),
-        "build_total_eur": round(sum(x["price"] for x in found), 2),
-        "build_total_complete": len(found) == len(ORDER),
-    }
+    apply_price_memory(result, previous)
     write_outputs(result)
     log("\nDONE. results.json, recommendations.csv en report.txt geschreven.")
-    log(f"Aanbevolen: {len(found)}/{len(ORDER)} - totaal EUR {result['summary']['build_total_eur']:.2f}"
-        + ("" if result["summary"]["build_total_complete"] else " (onvolledig)"))
+    summary = result["summary"]
+    log(f"Aanbevolen: {summary['recommended_count']}/{len(ORDER)} - totaal EUR {summary['build_total_eur']:.2f}"
+        + ("" if summary["build_total_complete"] else " (onvolledig)"))
 
 
 if __name__ == "__main__":
