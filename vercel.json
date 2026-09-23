@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "services",
+  "services": {
+    "web": {
+      "root": "web",
+      "framework": "nextjs"
+    }
+  }
+}
