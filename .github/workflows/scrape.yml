@@ -7,10 +7,8 @@ name: Scrape prices
 # real scraper and commits the JSON the Next.js app in web/ reads at build time.
 on:
   schedule:
-    # Every 6 hours, offset from minute 0. GitHub often delays or drops crons that
-    # fire at the top of the hour. 00:17, 06:17, 12:17 and 18:17 UTC
-    # (02:17, 08:17, 14:17 and 20:17 in the Netherlands during summer time).
-    - cron: "17 */6 * * *"
+    # 00:00, 06:00, 12:00 and 18:00 UTC (02:00, 08:00, 14:00 and 20:00 in the Netherlands during summer time).
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,8 +20,13 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    # Tweakers blocks GitHub-hosted runners. This job has to run on the machine
+    # that can open tweakers.net, registered as a repository self-hosted runner.
+    runs-on: self-hosted
     timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -38,6 +41,19 @@ jobs:
       - name: Scrape Tweakers
         working-directory: pc-price-finder-v5
         run: python pc_price_finder.py --no-cache
+
+      - name: Keep a blocked scrape off the site
+        working-directory: pc-price-finder-v5
+        run: |
+          python - <<'PY'
+          import json, sys
+          data = json.load(open("results.json", encoding="utf-8"))
+          discovered = sum(c.get("counts", {}).get("discovered", 0) for c in data.get("components", {}).values())
+          if discovered == 0:
+              print("Tweakers returned no products. This scan will not be published.")
+              sys.exit(1)
+          print(f"Discovered {discovered} products.")
+          PY
 
       - name: Copy results into the web app
         run: |
