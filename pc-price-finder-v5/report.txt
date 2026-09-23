@@ -1,84 +1,137 @@
 PC PRICE FINDER v5
 ========================================================================
-Generated: 2026-09-23 01:17:06
+Generated: 2026-09-23 10:53:06
 Limieten: GPU <= 408mm, koeler <= 164mm, voeding <= 220mm
 
-CASE  (gevonden 2, geldig 1, handmatig 0, afgekeurd 1)
+CASE  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Lian Li O11 Vision Compact Zwart - EUR 129.90 bij Megekko (gratis verzending; 9 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2085424/lian-li-o11-vision-compact-zwart.html
      ter info: tweedehands EUR 79.90 bij ALTERNATE.nl (Lichte gebruikssporen)
-  afgekeurd o.a.: kleur niet zwart (1x)
 
-CPU  (gevonden 21, geldig 2, handmatig 0, afgekeurd 19)
+CPU  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: AMD Ryzen 7 7800X3D Tray - EUR 273.80 bij HardwareWebwinkel.nl (+ EUR 6.95 verzending; 11 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/1899436/amd-ryzen-7-7800x3d-tray.html
-  alternatief: AMD Ryzen 7 7800X3D Boxed - EUR 304.99 bij NBB.com
-  afgekeurd o.a.: verkeerde categorie: Pc's (11x), titel past niet bij het zoekfilter (6x), geen actuele aanbieding (2x)
 
-GPU  (gevonden 95, geldig 32, handmatig 0, afgekeurd 63)
+GPU  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: MSI GeForce RTX 5070 Ti 16G INSPIRE 3X OC - EUR 1199.00 bij Paradigit (gratis verzending; 1 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2196346/msi-geforce-rtx-5070-ti-16g-inspire-3x-oc.html
-  alternatief: Gigabyte GeForce RTX 5070 Ti WINDFORCE OC SFF 16G - EUR 1229.90 bij Proshop.nl
-  alternatief: Gigabyte GeForce RTX 5070 Ti WINDFORCE OC V2 16G - EUR 1229.90 bij Proshop.nl
-  alternatief: MSI GeForce RTX 5070 Ti 16G VENTUS 3X OC - EUR 1249.00 bij bol
-  afgekeurd o.a.: geen actuele aanbieding (48x), verkeerde categorie: Pc's (8x), titel past niet bij het zoekfilter (7x)
 
-MOTHERBOARD  (gevonden 35, geldig 15, handmatig 0, afgekeurd 20)
+MOTHERBOARD  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Gigabyte B650 EAGLE AX - EUR 129.95 bij Informatique (gratis verzending; 19 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2035744/gigabyte-b650-eagle-ax.html
-  alternatief: ASUS TUF Gaming B650E-PLUS WIFI - EUR 139.00 bij Megekko
-  alternatief: ASUS TUF GAMING B650-E WIFI - EUR 144.00 bij Azerty
-  alternatief: ASUS B650E MAX GAMING WIFI - EUR 144.55 bij Micro-Mail B.V.
-  afgekeurd o.a.: geen actuele aanbieding (12x), geen full ATX (8x)
 
-RAM  (gevonden 102, geldig 15, handmatig 0, afgekeurd 87)
+RAM  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Team Group T-Force Delta RGB FF3D532G6000HC30DC01 - EUR 469.00 bij ALTERNATE.nl (+ EUR 6.95 verzending; 2 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/1881350/team-group-t-force-delta-rgb-ff3d532g6000hc30dc01.html
      prijs/kwaliteit: CL30 (+15 EUR)
-  alternatief: Patriot Viper Venom RGB PVVR532G600C30K - EUR 469.00 bij Amazon.nl Marketplace
-  alternatief: Goodram IRDM IR-6000D564L30S/32GDC - EUR 501.69 bij Amazon.nl Marketplace
-  alternatief: Kingston Fury Beast RGB KF560C30BBEAK2-32 - EUR 574.90 bij Azerty
-  afgekeurd o.a.: geen actuele aanbieding (38x), CL36 niet toegestaan (16x), niet 2x16GB (9x), kleur niet zwart (8x)
 
-COOLER  (gevonden 24, geldig 11, handmatig 0, afgekeurd 13)
+COOLER  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: ARCTIC Freezer 36-S A-RGB, Zwart - EUR 20.51 bij Proshop.nl (+ EUR 6.99 verzending; 9 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2353414/arctic-freezer-36-s-a-rgb-zwart.html
-  alternatief: ARCTIC Freezer 36-S, Zwart - EUR 20.90 bij Megekko
-  alternatief: Arctic Freezer 36 (Black) - EUR 23.84 bij Proshop.nl
-  alternatief: Arctic Freezer 36 A-RGB (Black) - EUR 29.95 bij Informatique
-  afgekeurd o.a.: geen actuele aanbieding (13x)
 
-SSD  (gevonden 32, geldig 16, handmatig 0, afgekeurd 16)
+SSD  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Lexar NM790 (zonder heatsink) 1TB - EUR 176.50 bij Joybuy (gratis verzending; 18 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/1932942/lexar-nm790-zonder-heatsink-1tb.html
-  alternatief: Kingston NV3 M.2 2280 (retail) 1TB - EUR 148.90 bij ALTERNATE.nl
-  alternatief: Crucial T500 (zonder heatsink) 1TB - EUR 179.90 bij ALTERNATE.nl
-  alternatief: Kingston KC3000 1TB - EUR 189.00 bij Megekko
-  afgekeurd o.a.: geen actuele aanbieding (9x), titel past niet bij het zoekfilter (5x), geen M.2 2280 (2x)
 
-PSU  (gevonden 90, geldig 50, handmatig 0, afgekeurd 40)
+PSU  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Cooler Master MWE GOLD 850 V3 ATX 3.1 Non-Modular - EUR 69.90 bij Amazon.nl (gratis verzending; 14 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2167460/cooler-master-mwe-gold-850-v3-atx-31-non-modular.html
      prijs/kwaliteit: ATX 3.1 (+10 EUR)
-  alternatief: FSP VITA GM 850W, Zwart - EUR 79.00 bij bol Plaza
-  alternatief: Cooler Master Elite Gold 850 - EUR 79.90 bij Azerty
-  alternatief: NZXT C850 Gold Core - EUR 89.58 bij Proshop.nl
-  afgekeurd o.a.: geen actuele aanbieding (27x), titel past niet bij het zoekfilter (9x), geen ATX-voeding (4x)
 
-FANS  (gevonden 9, geldig 3, handmatig 0, afgekeurd 6)
+FANS  (gevonden 0, geldig 0, handmatig 0, afgekeurd 0)
 ------------------------------------------------------------------------
   AANBEVOLEN: Montech GF120 V2 PWM ARGB Zwart 3-Pack, 120mm - EUR 29.90 bij Megekko (+ EUR 5.95 verzending; 1 shops)
+     Lowest price found so far. The latest scan was not lower.
      https://tweakers.net/pricewatch/2318798/montech-gf120-v2-pwm-argb-zwart-3-pack-120mm.html
-  alternatief: Montech GF120R V2 PWM ARGB Zwart 3-Pack, 120mm - EUR 29.90 bij Megekko
-  alternatief: ARCTIC P12 PWM PST RGB 0dB 3-pack Zwart + Controller, 120mm - EUR 49.25 bij Galaxus
-  afgekeurd o.a.: geen actuele aanbieding (3x), frame niet zwart (2x), geen 3-pack (1x)
 
 BUILD TOTAL: EUR 2498.46
+
+FOUTEN:
+  case: zoeken 'Lian Li O11 Vision Compact' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Lian%20Li%20O11%20Vision%20Compact: HTTP 403
+  cpu: zoeken 'AMD Ryzen 7 7800X3D' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=AMD%20Ryzen%207%207800X3D: HTTP 403
+  cpu: zoeken '7800X3D boxed' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=7800X3D%20boxed: HTTP 403
+  cpu: zoeken '7800X3D tray' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=7800X3D%20tray: HTTP 403
+  gpu: zoeken 'RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'ASUS RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=ASUS%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'MSI RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=MSI%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'Gigabyte RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Gigabyte%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'ASRock RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=ASRock%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'PNY RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=PNY%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'Palit RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Palit%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'Zotac RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Zotac%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'Gainward RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Gainward%20RTX%205070%20Ti%2016GB: HTTP 403
+  gpu: zoeken 'Inno3D RTX 5070 Ti 16GB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Inno3D%20RTX%205070%20Ti%2016GB: HTTP 403
+  motherboard: zoeken 'B650 ATX WiFi AM5 DDR5' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650%20ATX%20WiFi%20AM5%20DDR5: HTTP 403
+  motherboard: zoeken 'B650E ATX WiFi AM5 DDR5' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650E%20ATX%20WiFi%20AM5%20DDR5: HTTP 403
+  motherboard: zoeken 'B650 WiFi ATX' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650%20WiFi%20ATX: HTTP 403
+  motherboard: zoeken 'B650E WiFi ATX' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650E%20WiFi%20ATX: HTTP 403
+  motherboard: zoeken 'B650 WIFI' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650%20WIFI: HTTP 403
+  motherboard: zoeken 'B650E WIFI' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=B650E%20WIFI: HTTP 403
+  ram: zoeken '32GB DDR5 6000 CL30 EXPO 2x16' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=32GB%20DDR5%206000%20CL30%20EXPO%202x16: HTTP 403
+  ram: zoeken 'DDR5 6000 32GB EXPO' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=DDR5%206000%2032GB%20EXPO: HTTP 403
+  ram: zoeken 'G.Skill Flare X5 32GB DDR5 6000' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=G.Skill%20Flare%20X5%2032GB%20DDR5%206000: HTTP 403
+  ram: zoeken 'G.Skill Trident Z5 Neo 32GB DDR5 6000' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=G.Skill%20Trident%20Z5%20Neo%2032GB%20DDR5%206000: HTTP 403
+  ram: zoeken 'Kingston Fury Beast 32GB DDR5 6000' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Kingston%20Fury%20Beast%2032GB%20DDR5%206000: HTTP 403
+  ram: zoeken 'Kingston Fury Beast RGB 32GB DDR5 6000' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Kingston%20Fury%20Beast%20RGB%2032GB%20DDR5%206000: HTTP 403
+  ram: zoeken 'Corsair Vengeance 32GB DDR5 6000 EXPO' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Corsair%20Vengeance%2032GB%20DDR5%206000%20EXPO: HTTP 403
+  ram: zoeken 'TeamGroup T-Create 32GB DDR5 6000 EXPO' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=TeamGroup%20T-Create%2032GB%20DDR5%206000%20EXPO: HTTP 403
+  ram: zoeken 'TeamGroup Delta RGB 32GB DDR5 6000 EXPO' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=TeamGroup%20Delta%20RGB%2032GB%20DDR5%206000%20EXPO: HTTP 403
+  ram: zoeken 'Patriot Viper Venom 32GB DDR5 6000' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Patriot%20Viper%20Venom%2032GB%20DDR5%206000: HTTP 403
+  ram: zoeken 'Silicon Power 32GB DDR5 6000 EXPO' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Silicon%20Power%2032GB%20DDR5%206000%20EXPO: HTTP 403
+  cooler: zoeken 'AM5 air cooler black 120mm' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=AM5%20air%20cooler%20black%20120mm: HTTP 403
+  cooler: zoeken 'AM5 tower cooler black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=AM5%20tower%20cooler%20black: HTTP 403
+  cooler: zoeken 'Thermalright Peerless Assassin 120 SE Black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Thermalright%20Peerless%20Assassin%20120%20SE%20Black: HTTP 403
+  cooler: zoeken 'Thermalright Phantom Spirit 120 SE Black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Thermalright%20Phantom%20Spirit%20120%20SE%20Black: HTTP 403
+  cooler: zoeken 'Arctic Freezer 36 Black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Arctic%20Freezer%2036%20Black: HTTP 403
+  cooler: zoeken 'Endorfy Fortis 5 Black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Endorfy%20Fortis%205%20Black: HTTP 403
+  cooler: zoeken 'Scythe Fuma 3' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Scythe%20Fuma%203: HTTP 403
+  cooler: zoeken 'DeepCool AK400 Zero Dark' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=DeepCool%20AK400%20Zero%20Dark: HTTP 403
+  cooler: zoeken 'be quiet Pure Rock 3 Black' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=be%20quiet%20Pure%20Rock%203%20Black: HTTP 403
+  ssd: zoeken '1TB PCIe 4.0 NVMe M.2 2280' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=1TB%20PCIe%204.0%20NVMe%20M.2%202280: HTTP 403
+  ssd: zoeken '1TB Gen4 NVMe M.2 2280' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=1TB%20Gen4%20NVMe%20M.2%202280: HTTP 403
+  ssd: zoeken 'WD Black SN770 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=WD%20Black%20SN770%201TB: HTTP 403
+  ssd: zoeken 'WD Black SN850X 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=WD%20Black%20SN850X%201TB: HTTP 403
+  ssd: zoeken 'Lexar NM790 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Lexar%20NM790%201TB: HTTP 403
+  ssd: zoeken 'Samsung 990 Pro 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Samsung%20990%20Pro%201TB: HTTP 403
+  ssd: zoeken 'Crucial T500 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Crucial%20T500%201TB: HTTP 403
+  ssd: zoeken 'Crucial P3 Plus 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Crucial%20P3%20Plus%201TB: HTTP 403
+  ssd: zoeken 'Kingston KC3000 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Kingston%20KC3000%201TB: HTTP 403
+  ssd: zoeken 'Kingston NV3 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Kingston%20NV3%201TB: HTTP 403
+  ssd: zoeken 'Solidigm P44 Pro 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Solidigm%20P44%20Pro%201TB: HTTP 403
+  ssd: zoeken 'SK hynix Platinum P41 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=SK%20hynix%20Platinum%20P41%201TB: HTTP 403
+  ssd: zoeken 'TeamGroup MP44 1TB' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=TeamGroup%20MP44%201TB: HTTP 403
+  psu: zoeken '850W ATX 3.1 Gold' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=850W%20ATX%203.1%20Gold: HTTP 403
+  psu: zoeken '850W ATX 3.0 Gold' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=850W%20ATX%203.0%20Gold: HTTP 403
+  psu: zoeken '850W PCIe 5 Gold' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=850W%20PCIe%205%20Gold: HTTP 403
+  psu: zoeken 'be quiet Pure Power 12 850W' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=be%20quiet%20Pure%20Power%2012%20850W: HTTP 403
+  psu: zoeken 'Corsair RM850e' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Corsair%20RM850e: HTTP 403
+  psu: zoeken 'Corsair RM850x' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Corsair%20RM850x: HTTP 403
+  psu: zoeken 'MSI MAG A850GL PCIe5' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=MSI%20MAG%20A850GL%20PCIe5: HTTP 403
+  psu: zoeken 'MSI MPG A850G PCIe5' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=MSI%20MPG%20A850G%20PCIe5: HTTP 403
+  psu: zoeken 'NZXT C850 Gold' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=NZXT%20C850%20Gold: HTTP 403
+  psu: zoeken 'Cooler Master MWE Gold 850 V3' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Cooler%20Master%20MWE%20Gold%20850%20V3: HTTP 403
+  psu: zoeken 'ASUS TUF Gaming 850W Gold' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=ASUS%20TUF%20Gaming%20850W%20Gold: HTTP 403
+  psu: zoeken 'Seasonic Focus GX-850' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Seasonic%20Focus%20GX-850: HTTP 403
+  psu: zoeken 'FSP 850W Gold ATX 3' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=FSP%20850W%20Gold%20ATX%203: HTTP 403
+  fans: zoeken '120mm PWM ARGB black 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=120mm%20PWM%20ARGB%20black%203%20pack: HTTP 403
+  fans: zoeken 'Montech GF120 V2 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Montech%20GF120%20V2%203%20pack: HTTP 403
+  fans: zoeken 'Montech GF120R V2 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Montech%20GF120R%20V2%203%20pack: HTTP 403
+  fans: zoeken 'Arctic P12 PWM PST A-RGB 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Arctic%20P12%20PWM%20PST%20A-RGB%203%20pack: HTTP 403
+  fans: zoeken 'Lian Li 120mm PWM ARGB 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Lian%20Li%20120mm%20PWM%20ARGB%203%20pack: HTTP 403
+  fans: zoeken 'Phanteks 120mm PWM ARGB 3 pack' mislukt: https://tweakers.net/pricewatch/zoeken/?keyword=Phanteks%20120mm%20PWM%20ARGB%203%20pack: HTTP 403
