@@ -1,0 +1,48 @@
+name: Scrape prices
+
+on:
+  schedule:
+    # 00:00, 06:00, 12:00 and 18:00 UTC (02:00, 08:00, 14:00 and 20:00 in the Netherlands during summer time)
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-prices
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scraper dependencies
+        working-directory: pc-price-finder-v5
+        run: python -m pip install -r requirements.txt
+
+      - name: Scrape Tweakers
+        working-directory: pc-price-finder-v5
+        run: python pc_price_finder.py --no-cache
+
+      - name: Copy results into the web app
+        run: |
+          cp pc-price-finder-v5/results.json web/data/results.json
+          cp pc-price-finder-v5/build_config.json web/data/build_config.json
+
+      - name: Commit updated prices
+        run: |
+          git add pc-price-finder-v5/results.json pc-price-finder-v5/recommendations.csv pc-price-finder-v5/report.txt web/data/results.json web/data/build_config.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update Tweakers prices from the scheduled scrape."
+          git push
